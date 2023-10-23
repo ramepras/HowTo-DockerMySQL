@@ -6,7 +6,7 @@
 # Command to install MySQL
     docker run --name mysql --net dev-network -v /Users/rame/Documents/Work/Docker/MySQL:/var/lib/mysql -p 3306:3306 -d -e MYSQL_ROOT_PASSWORD=mysql mysql --lower_case_table_names=1
 
-# Connect to MySQL 
+# Connect to MySQL from host.
     docker exec -it mysql bash
     mysql -uroot -p
     (enter password)
